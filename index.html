@@ -1,49 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nove Leif — Professional Portfolio</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background: #f0f4f8; color: #333; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
-        header { text-align: center; padding: 3rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
-        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1.1rem; opacity: 0.9; }
-        section { background: white; padding: 2rem; margin: 1.5rem 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        h2 { color: #667eea; margin-bottom: 1rem; font-size: 1.3rem; }
-        ul { list-style: none; }
-        li { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
-        p { margin-bottom: 1rem; }
-        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.9rem; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
+            line-height: 1.7; 
+            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); 
+            min-height: 100vh;
+            color: #333;
+        }
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        .hero {
+            text-align: center;
+            padding: 50px 30px;
+            color: white;
+        }
+        .hero h1 { font-size: 48px; margin-bottom: 10px; letter-spacing: 1px; }
+        .hero p { font-size: 20px; opacity: 0.9; }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 {
+            color: #2c539e;
+            font-size: 26px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 10px;
+        }
+        .skills-list { list-style: none; font-size: 17px; }
+        .skills-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f4ff;
+        }
+        .skills-list li:last-child { border-bottom: none; }
+        .skills-list li::before {
+            content: "✓ ";
+            color: #2c539e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .contact-card {
+            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            text-align: center;
+        }
+        .contact-info {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c539e;
+            margin: 15px 0;
+        }
+        .tagline {
+            font-style: italic;
+            color: #555;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name Here</h1>
-        <p class="subtitle">Professional Portfolio</p>
-    </header>
     <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>Write a short introduction about yourself here.</p>
-        </section>
-        <section>
-            <h2>My Skills</h2>
-            <ul>
-                <li>Skill 1 — Description</li>
-                <li>Skill 2 — Description</li>
-                <li>Skill 3 — Description</li>
+        <!-- HEADER / PAMAGAT -->
+        <div class="hero">
+            <h1>Nove Leif</h1>
+            <p>Professional Service Provider & Digital Assistant</p>
+            <p style="margin-top: 10px; font-size: 17px;">Katapatan · Kahusayan · Pagiging Maaasahan</p>
+        </div>
+
+        <!-- TUNGKOL SA AKIN -->
+        <div class="card">
+            <h2>Tungkol sa Akin</h2>
+            <p>Ako si <strong>Nove Leif</strong> — isang dedikadong indibidwal na handang magbigay ng mataas na kalidad na serbisyo para sa inyong mga pangangailangan. Pinahahalagahan ko ang bawat tiwalang ipinagkakaloob sa akin, kaya tinitiyak kong bawat gawain ay ginagawa nang may katapatan, kasipagan, at buong husay.</p>
+            <p style="margin-top: 12px;">Hindi ako tumitigil hangga't hindi nakakamit ang inaasahang kalidad. Mabilis matuto, handang makinig, at laging bukas sa pagpapabuti ng aking kakayahan upang mas mapaglingkuran kayo nang mas mahusay. Ang inyong kasiyahan ay aking pangunahing layunin.</p>
+        </div>
+
+        <!-- MGA KAYANG GAWIN / SERBISYO -->
+        <div class="card">
+            <h2>Ano ang Kaya Kong Gawin</h2>
+            <ul class="skills-list">
+                <li>Pagsusulat ng mga liham, mensahe, pormal na liham, at personal na sulatin</li>
+                <li>Paggawa ng mga reviewer, buod, tala, at pagsasaayos ng impormasyon</li>
+                <li>Pagsasalin at paglilinaw — mula sa Ingles patungong Tagalog at pabalik</li>
+                <li>Paggawa ng mga caption, mensahe sa social media, at pampublikong pahayag</li>
+                <li>Pag-aayos at paglilinis ng mga listahan, talaan, at datos</li>
+                <li>Pagtulong sa gawaing pampaaralan — pagsusuri, pagbubuod, at paglilinaw ng paksa</li>
+                <li>Paggawa ng mga simpleng dokumento, pormat, at presentasyon</li>
+                <li>Pagbibigay ng mungkahi, opinyon, at maayos na pagsusuri sa inyong nilalaman</li>
+                <li>Pagtugon sa mga mensahe, pagsagot sa katanungan, at maayos na pakikipag-ugnayan</li>
+                <li>Iba pang serbisyo — sabihin niyo lamang ang inyong kailangan, at gagawin ko ang aking makakaya!</li>
             </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: yourname@email.com</p>
-        </section>
+        </div>
+
+        <!-- PRESYO -->
+        <div class="card">
+            <h2>Presyo at Kasunduan</h2>
+            <p>Ang aking serbisyo ay may <strong>makatarungan at abot-kayang halaga</strong> — nakabatay sa hirap, oras, at kalidad ng gawain.</p>
+            <p style="margin-top: 10px;">Laging ipinapaalam ang presyo bago magsimula ang anumang gawain — walang nakatagong bayad, walang sapilitan. Malinaw, tapat, at bukas sa pag-uusap.</p>
+        </div>
+
+        <!-- PAKIKIPAG-UGNAYAN -->
+        <div class="card contact-card">
+            <h2>Makipag-ugnayan</h2>
+            <p>Handang tumugon sa inyong mga katanungan at kahilingan</p>
+            <div class="contact-info">📞 0991-809-7130</div>
+            <p>Maaaring tumawag o mag-text anumang oras — sasagot ako sa lalong madaling panahon!</p>
+            <p class="tagline">"Ang bawat gawain ay ginagawa nang may pagmamahal at katapatan."</p>
+        </div>
     </div>
-    <footer>
-        Easy Portfolio Template — Ready to Customize
-    </footer>
+
+    <div class="footer">
+        <p>© 2026 Nove Leif — Lahat ng Karapatang Nakareserba</p>
+    </div>
 </body>
 </html>
