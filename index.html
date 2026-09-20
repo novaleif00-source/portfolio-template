@@ -1,129 +1,136 @@
 <!DOCTYPE html>
-<html lang="tl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nove Leif — Professional Portfolio</title>
+    <title>Axie Ozqffin — Professional Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             font-family: 'Segoe UI', Roboto, Arial, sans-serif; 
-            line-height: 1.7; 
-            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); 
+            line-height: 1.75; 
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%); 
             min-height: 100vh;
-            color: #333;
+            color: #2d3748;
         }
-        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 860px; margin: 0 auto; padding: 24px; }
         .hero {
             text-align: center;
-            padding: 50px 30px;
+            padding: 60px 30px;
             color: white;
         }
-        .hero h1 { font-size: 48px; margin-bottom: 10px; letter-spacing: 1px; }
-        .hero p { font-size: 20px; opacity: 0.9; }
+        .hero h1 { font-size: 52px; margin-bottom: 12px; letter-spacing: 1.2px; font-weight: 700; }
+        .hero p { font-size: 21px; opacity: 0.93; }
+        .tagline { margin-top: 14px; font-size: 18px; opacity: 0.88; letter-spacing: 0.5px; }
         .card {
             background: white;
-            border-radius: 16px;
-            padding: 35px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            border-radius: 18px;
+            padding: 38px;
+            margin-bottom: 26px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .card:hover { transform: translateY(-5px); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 14px 35px rgba(0,0,0,0.15); }
         .card h2 {
-            color: #2c539e;
-            font-size: 26px;
-            margin-bottom: 20px;
+            color: #1e40af;
+            font-size: 27px;
+            margin-bottom: 22px;
             border-bottom: 2px solid #e0e7ff;
-            padding-bottom: 10px;
+            padding-bottom: 12px;
+            font-weight: 600;
         }
         .skills-list { list-style: none; font-size: 17px; }
         .skills-list li {
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #f0f4ff;
         }
         .skills-list li:last-child { border-bottom: none; }
         .skills-list li::before {
             content: "✓ ";
-            color: #2c539e;
+            color: #1e40af;
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 12px;
         }
         .contact-card {
-            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
             text-align: center;
         }
         .contact-info {
             font-size: 20px;
             font-weight: 600;
-            color: #2c539e;
-            margin: 15px 0;
-        }
-        .tagline {
-            font-style: italic;
-            color: #555;
-            margin-top: 15px;
+            color: #1e40af;
+            margin: 16px 0;
         }
         .footer {
             text-align: center;
             color: white;
-            padding: 20px;
-            opacity: 0.8;
+            padding: 28px;
+            opacity: 0.82;
+            font-size: 15px;
         }
+        .highlight { font-weight: 700; color: #1e40af; }
+        .emphasis { font-weight: 600; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER / PAMAGAT -->
+        <!-- HEADER -->
         <div class="hero">
-            <h1>Nove Leif</h1>
-            <p>Professional Service Provider & Digital Assistant</p>
-            <p style="margin-top: 10px; font-size: 17px;">Katapatan · Kahusayan · Pagiging Maaasahan</p>
+            <h1>Axie Ozqffin</h1>
+            <p>Professional Service Provider & Digital Support Specialist</p>
+            <p class="tagline">Integrity · Excellence · Reliability · Dedication</p>
         </div>
 
-        <!-- TUNGKOL SA AKIN -->
+        <!-- ABOUT ME -->
         <div class="card">
-            <h2>Tungkol sa Akin</h2>
-            <p>Ako si <strong>Nove Leif</strong> — isang dedikadong indibidwal na handang magbigay ng mataas na kalidad na serbisyo para sa inyong mga pangangailangan. Pinahahalagahan ko ang bawat tiwalang ipinagkakaloob sa akin, kaya tinitiyak kong bawat gawain ay ginagawa nang may katapatan, kasipagan, at buong husay.</p>
-            <p style="margin-top: 12px;">Hindi ako tumitigil hangga't hindi nakakamit ang inaasahang kalidad. Mabilis matuto, handang makinig, at laging bukas sa pagpapabuti ng aking kakayahan upang mas mapaglingkuran kayo nang mas mahusay. Ang inyong kasiyahan ay aking pangunahing layunin.</p>
+            <h2>About Me</h2>
+            <p>I am <span class="highlight">Axie Ozqffin</span> — a dedicated, trustworthy, and results-oriented professional committed to delivering exceptional service and reliable support to every client. I treat every task with <strong>seriousness, honesty, and full commitment</strong>, because I understand that your trust is my most valuable asset.</p>
+            <p style="margin-top: 14px;">I am detail-oriented, a fast learner, and constantly improving my skills to provide you with the best possible assistance. I take pride in producing clear, accurate, and high-quality work — I do not consider a task finished until it meets your expectations and standards. Professionalism is not just a word to me; it is how I work every single day.</p>
         </div>
 
-        <!-- MGA KAYANG GAWIN / SERBISYO -->
+        <!-- SERVICES / SKILLS -->
         <div class="card">
-            <h2>Ano ang Kaya Kong Gawin</h2>
+            <h2>Services & Skills</h2>
+            <p style="margin-bottom: 15px;">I offer a wide range of assistance to meet your needs:</p>
             <ul class="skills-list">
-                <li>Pagsusulat ng mga liham, mensahe, pormal na liham, at personal na sulatin</li>
-                <li>Paggawa ng mga reviewer, buod, tala, at pagsasaayos ng impormasyon</li>
-                <li>Pagsasalin at paglilinaw — mula sa Ingles patungong Tagalog at pabalik</li>
-                <li>Paggawa ng mga caption, mensahe sa social media, at pampublikong pahayag</li>
-                <li>Pag-aayos at paglilinis ng mga listahan, talaan, at datos</li>
-                <li>Pagtulong sa gawaing pampaaralan — pagsusuri, pagbubuod, at paglilinaw ng paksa</li>
-                <li>Paggawa ng mga simpleng dokumento, pormat, at presentasyon</li>
-                <li>Pagbibigay ng mungkahi, opinyon, at maayos na pagsusuri sa inyong nilalaman</li>
-                <li>Pagtugon sa mga mensahe, pagsagot sa katanungan, at maayos na pakikipag-ugnayan</li>
-                <li>Iba pang serbisyo — sabihin niyo lamang ang inyong kailangan, at gagawin ko ang aking makakaya!</li>
+                <li>Drafting and writing formal letters, official correspondence, personal letters, and professional messages</li>
+                <li>Creating comprehensive reviewers, study guides, detailed notes, and organized summaries for academic or personal use</li>
+                <li>Professional translation — English to Tagalog, Tagalog to English — ensuring accuracy, proper tone, and clear meaning</li>
+                <li>Writing social media content: captions, posts, announcements, event invitations, and public statements</li>
+                <li>Data organization — sorting, arranging, and cleaning lists, records, spreadsheets, and information into neat, easy-to-read formats</li>
+                <li>Academic support — summarizing lessons, explaining topics, outlining essays, and reviewing schoolwork</li>
+                <li>Document preparation — formatting files, creating templates, reports, and simple presentations</li>
+                <li>Content editing and proofreading — checking clarity, grammar, spelling, and flow of your writing</li>
+                <li>Providing thoughtful feedback, suggestions, and constructive opinions on your projects and ideas</li>
+                <li>Prompt and respectful communication — answering inquiries, replying to messages, and maintaining clear updates</li>
+                <li>Research assistance — gathering information, compiling facts, and organizing references</li>
+                <li>Creating schedules, plans, checklists, and to-do lists to help you stay organized</li>
+                <li>Message drafting — composing replies, greetings, thank-you notes, and special occasion messages</li>
+                <li>Clarification and explanation — simplifying complex topics and making information easy to understand</li>
+                <li>Other custom tasks — share what you need, and I will work with you to get it done!</li>
             </ul>
         </div>
 
-        <!-- PRESYO -->
+        <!-- PRICING & TERMS -->
         <div class="card">
-            <h2>Presyo at Kasunduan</h2>
-            <p>Ang aking serbisyo ay may <strong>makatarungan at abot-kayang halaga</strong> — nakabatay sa hirap, oras, at kalidad ng gawain.</p>
-            <p style="margin-top: 10px;">Laging ipinapaalam ang presyo bago magsimula ang anumang gawain — walang nakatagong bayad, walang sapilitan. Malinaw, tapat, at bukas sa pag-uusap.</p>
+            <h2>Pricing & Terms</h2>
+            <p>I provide <strong>fair, transparent, and affordable rates</strong> determined by the scope, difficulty, time required, and detail level of each project.</p>
+            <p style="margin-top: 12px;">Every price is discussed and agreed upon <strong>before</strong> starting any work. There are no hidden fees, no surprise charges, and no obligations. If you have questions, we can adjust and find the best arrangement together. Your confidence and peace of mind matter most to me.</p>
         </div>
 
-        <!-- PAKIKIPAG-UGNAYAN -->
+        <!-- CONTACT -->
         <div class="card contact-card">
-            <h2>Makipag-ugnayan</h2>
-            <p>Handang tumugon sa inyong mga katanungan at kahilingan</p>
-            <div class="contact-info">📞 0991-809-7130</div>
-            <p>Maaaring tumawag o mag-text anumang oras — sasagot ako sa lalong madaling panahon!</p>
-            <p class="tagline">"Ang bawat gawain ay ginagawa nang may pagmamahal at katapatan."</p>
+            <h2>Get In Touch</h2>
+            <p>I am ready to assist you — let’s discuss how I can help</p>
+            <div class="contact-info">📞 Mobile: 0991-809-7130</div>
+            <div class="contact-info">📘 Facebook: Axie Ozqffin</div>
+            <p>You may call, text, or send a message anytime. I will respond to you as quickly and professionally as I can.</p>
+            <p style="margin-top: 18px; font-style: italic; color: #374151; font-weight: 500;">"Excellence is not an act, but a habit — and integrity is the foundation of every work I do."</p>
         </div>
     </div>
 
     <div class="footer">
-        <p>© 2026 Nove Leif — Lahat ng Karapatang Nakareserba</p>
+        <p>© 2026 Axie Ozqffin — All Rights Reserved · Built with Integrity and Dedication</p>
     </div>
 </body>
 </html>
